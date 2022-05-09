@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Will portfolio",
+  "source": "src/index.html",
+  "main": "dist/index.js",
+  
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmoothieDevs/Portfolio.git"
+  },
+  "author": "William Stephan",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/SmoothieDevs/Portfolio/issues"
+  },
+  "homepage": "https://github.com/SmoothieDevs/Portfolio#readme",
+  "assetsPath": "assets",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.5.0",
+    "parcel": "^2.5.0"
+  },
+  "dependencies": {
+    "gsap": "^3.10.4"
+  }
+}

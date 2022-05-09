@@ -1,0 +1,33 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css");
+
+$font1:'HK Grotesk', sans-serif;
+
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 16px;
+  background: #FDFDFD;
+  font-family: $font1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  .body-inner{
+    width: 100%;
+    height: 100vh;
+    main{
+      height: 100%;
+    }
+  }
+}
+
+.stop-scrolling {
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: $font1;
+}
