@@ -1,33 +1,57 @@
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css");
 
-$font1:'HK Grotesk', sans-serif;
+$font1: "HK Grotesk", sans-serif;
 
-html{
+html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow: hidden;
+  height: 100vh;
 }
 
 body {
   font-size: 16px;
-  background: #FDFDFD;
+  background: #fdfdfd;
   font-family: $font1;
   overflow: hidden;
   width: 100%;
-  height: 100%;
-  .body-inner{
+  height: 100vh;
+  .body-inner {
     width: 100%;
-    height: 100vh;
-    main{
+    height: 100%;
+    overflow: hidden;
+    main {
       height: 100%;
+      .scroll-text {
+        overflow: hidden;
+        width: fit-content;
+        left: 50px;
+        bottom: 50px;
+        position: relative;
+        font-family: $font1;
+        color: #f0f0f0;
+        font-size: 15px;
+        line-height: 22px;
+        text-shadow: 30px 30px 4px rgba(0, 0, 0, 0.25);
+        transform: rotate(-90deg);
+        transform-origin: top left;
+
+      }
+      
     }
   }
 }
-
+.chars .char{
+  display: inline-block;
+  transform: translateY(-22px);
+}
 .stop-scrolling {
   height: 100vh;
   overflow: hidden;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: $font1;
 }
