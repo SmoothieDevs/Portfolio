@@ -1,0 +1,70 @@
+$background2: "../assets/images/Background2.jpg";
+$background2N: "../assets/images/Background2N.jpg";
+body.dark{
+  .section-vertical-slider{
+    background-image: url($background2N);
+  }
+}
+.section-vertical-slider {
+  background-image: url($background2);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  z-index: -1;
+}
+
+.menu {
+  height: 100vh;
+  overflow: hidden;
+  cursor: grab;
+  
+  &.is-dragging {
+    cursor: grabbing;
+  }
+  
+  ul {
+    counter-reset: count;
+  }
+  
+  &--item {
+    counter-increment: count;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 120px;
+    line-height: 1.2;
+    padding: 2rem 0;
+    text-align: center;
+    
+    @media (max-width: 767px) {
+      font-size: 10vw;
+      padding: 1rem 0;
+    }
+    
+    &:nth-child(n+10):before {
+      content: counter(count);
+    }
+    
+    button {
+      color: #020000;  
+      text-decoration: none;
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+      user-select: none;
+      font-size: 120px;
+      -webkit-appearance: none;
+      background: none;
+      padding: 0;
+      border: none;
+      outline: none;
+      box-shadow: none;
+      color: #020000;  
+      cursor: pointer;
+    }
+  }
+}
