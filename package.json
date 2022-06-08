@@ -46,7 +46,6 @@
   "engines": {
     "node": "^12 || >=14"
   },
-
   "license": "MIT",
   "private": false,
   "repository": {
@@ -64,5 +63,8 @@
     "stats": "webpack --config configuration/webpack.prod.config.js --mode=production --json > dist/stats.json && webpack-bundle-analyzer dist/stats.json"
   },
   "target": "web",
-  "dependencies": {}
+  "dependencies": {
+    "gsap": "^3.10.4",
+    "splitting": "^1.0.6"
+  }
 }

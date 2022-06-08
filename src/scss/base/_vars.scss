@@ -3,6 +3,18 @@
 */
 
 /* Typography */
+$font1: 'Major Mono Display', monospace;
+$font2: 'Helvetica Neue', sans-serif;
+$font3: 'Helvetica 25 UltraLight',
+    sans-serif;
+$font4: 'Helvetica 35 Thin',
+    sans-serif;
+$font5: 'Helvetica 45 Light',
+    sans-serif;
+$font6: 'Helvetica 55 Roman',
+    sans-serif;
+$font7: 'Helvetica 65 Medium',
+    sans-serif;
 /* Breakpoints */
 /* Paths */
 /* Grid setup */
@@ -11,7 +23,7 @@ $black: #000;
 $white: #fff;
 $light-gray: #f1f1f1;
 
-$body-background-color: #333;
+$body-background-color: #404040;
 $foreground-color: #fff;
 $caption-color: #464646;
 $accent-color: #999;

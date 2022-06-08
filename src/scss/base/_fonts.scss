@@ -1,11 +1,7 @@
 /**
  * Fonts
 */
-
-@font-face {
-  font-family: 'DINP-R';
-  src: url("../fonts/DINPro-Regular.eot?") format("eot"),
-  url("../fonts/DINPro-Regular.woff") format("woff"),
-  url("../fonts/DINPro-Regular.ttf") format("truetype");
-  font-style: normal;
-}
+/* Major Mono Display */
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+/*Helvetica*/
+@import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
